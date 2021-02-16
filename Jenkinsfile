@@ -1,10 +1,17 @@
-pipeline {
-	agent any   
-	stages {
-        	stage('test') {
-	            steps {
-			sh 'pytest test_add.py'
-	            }
-	        }
-	}
+pipeline{
+    agent any
+    
+    stages{
+        stage('checkout'){
+            steps{
+                echo "******checkout******"
+            }
+        }
+        stage('test'){
+            steps{
+                echo "******test******"
+                sh 'pytest'
+            }
+        }
+    }
 }
