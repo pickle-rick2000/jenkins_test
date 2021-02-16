@@ -11,7 +11,7 @@ pipeline{
         stage('test'){
             steps{
                 echo "******test******"
-                sh 'pytest'
+                sh 'pytest-3'
             }
         }
     }
