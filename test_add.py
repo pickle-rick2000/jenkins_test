@@ -7,4 +7,4 @@ def test_add2():
         assert mod_add.add(3,3)==6
 
 def test_add3():
-        assert mod_add.add(5,5)==10
+        assert mod_add.add(5,6)==11
