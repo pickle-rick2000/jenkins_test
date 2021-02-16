@@ -3,8 +3,7 @@ pipeline {
 	stages {
         	stage('test') {
 	            steps {
-			sh 'pip install pytest'
-			sh 'pytest'
+			sh 'pytest test_add.py'
 	            }
 	        }
 	}
